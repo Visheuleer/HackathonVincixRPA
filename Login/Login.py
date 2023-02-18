@@ -10,6 +10,8 @@ def Login(driver):
     PreencheCredenciais(driver, user_name, senha)
     time.sleep(.5)
     ApertaBotaoLogin(driver)
+    time.sleep(1)
+    VerificaSeMudouUrl(driver)
 
 def NavegaPaginaInicial(driver):
     driver.get('https://www.rpahackathon.co.uk/login')
@@ -25,3 +27,12 @@ def PreencheCredenciais(driver, user_name, senha):
 
 def ApertaBotaoLogin(driver):
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(('class name', 'login-button'))).click()
+
+def VerificaSeMudouUrl(driver):
+    if driver.current_url != 'https://www.rpahackathon.co.uk/login':
+        pass
+    else:
+        AtualizaPagina(driver)
+
+def AtualizaPagina(driver):
+    driver.refresh()

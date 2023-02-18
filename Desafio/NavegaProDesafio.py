@@ -1,12 +1,10 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
-import time
-
 
 def NavegaProDesafio(driver):
     NavegaLevel1(driver)
-    ClicaBotaoIniciarDesafio(driver)
+    ClicaBotaoIniciarLevel(driver)
     SelecionaFerramentaAutomacao(driver)
     BaixaArquivoExcel(driver)
     ClicaBotaoIniciarDesafio(driver)
@@ -14,7 +12,7 @@ def NavegaProDesafio(driver):
 def NavegaLevel1(driver):
     WebDriverWait(driver, 10).until(EC.visibility_of_element_located(('id', 'l1-tab-nav'))).click()
 
-def ClicaBotaoIniciarDesafio(driver):
+def ClicaBotaoIniciarLevel(driver):
     WebDriverWait(driver, 10).until(EC.visibility_of_element_located(('xpath', '//*[@id="l1-tab"]/div/a'))).click()
 
 
@@ -24,7 +22,7 @@ def SelecionaFerramentaAutomacao(driver):
 
 def BaixaArquivoExcel(driver):
     WebDriverWait(driver, 10).until(EC.visibility_of_element_located(('class name', 'btn-success'))).click()
-    time.sleep(10)
+
 
 def ClicaBotaoIniciarDesafio(driver):
     WebDriverWait(driver, 10).until(EC.visibility_of_element_located(('class name', 'btn-primary'))).click()
