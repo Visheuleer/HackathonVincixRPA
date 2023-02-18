@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="618efca1-cd9b-41e1-bfc6-483c267a7a9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Chrome/FormataChrome.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Desafio/NavegaProDesafio.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Login/Login.py" beforeDir="false" afterPath="$PROJECT_DIR$/Login/Login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio/NavegaProDesafio.py" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio/NavegaProDesafio.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +92,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Desafio/NavegaProDesafio.py</url>
-          <line>13</line>
+          <line>14</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>

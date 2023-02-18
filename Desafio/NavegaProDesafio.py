@@ -9,6 +9,7 @@ def NavegaProDesafio(driver):
     ClicaBotaoIniciarDesafio(driver)
     SelecionaFerramentaAutomacao(driver)
     BaixaArquivoExcel(driver)
+    ClicaBotaoIniciarDesafio(driver)
 
 def NavegaLevel1(driver):
     WebDriverWait(driver, 10).until(EC.visibility_of_element_located(('id', 'l1-tab-nav'))).click()
@@ -24,4 +25,8 @@ def SelecionaFerramentaAutomacao(driver):
 def BaixaArquivoExcel(driver):
     WebDriverWait(driver, 10).until(EC.visibility_of_element_located(('class name', 'btn-success'))).click()
     time.sleep(10)
+
+def ClicaBotaoIniciarDesafio(driver):
+    WebDriverWait(driver, 10).until(EC.visibility_of_element_located(('class name', 'btn-primary'))).click()
+
 
